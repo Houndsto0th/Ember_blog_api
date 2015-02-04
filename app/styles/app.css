@@ -1,3 +1,145 @@
 html, body {
-  margin: 20px;
+  margin: 10px;
+  width: 95%;
+  height: 90%;
+  font-family: "Roboto";
+
 }
+
+a:link {
+  color: #FFAB40;
+}
+
+a:visited {
+  color: #FFD180;
+}
+
+.buttonContain {
+  height: 4em;
+  width: 4em;
+  margin: 0 auto;
+}
+
+.paper-sidebar {
+  width: 30%;
+  height: 500px;
+  float: left;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.69);
+  padding: 10px;
+  overflow: scroll;
+}
+
+.paper-main {
+  width: 66%;
+  height: 500px;
+  float: left;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.69);
+  padding: 10px;
+  transition: ;
+}
+
+input {
+  border: none;
+  text-align: center;
+  height: 40%;
+  width: 50%;
+}
+
+textarea {
+  height: 300px;
+  width: 600px;
+  margin: 0 auto;
+  font-family: "Roboto";
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+  outline: none;
+  border: none;
+  resize: none;
+  box-shadow: 0 0 1px rgba(51, 43, 35, 0.64)
+
+}
+
+.newPostBody {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.newPostTitle{
+  text-align: center;
+  margin: 0 auto;
+  height: 10%;
+
+}
+
+.btn {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  background-color: #FFAB40;
+  color: #575757;
+  box-shadow: 0 0 5px
+  rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin: 0px auto;
+  transform: translateZ(0) scale(1);
+  transition: all 0.5s ease;
+  border-radius: 2em;
+}
+
+
+.btn:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.btn:active {
+  transform: scale(.75, .75);
+}
+
+.btn:focus {
+  outline: 0;
+  border:none;
+  color: rgba(0, 0, 0, 0);
+}
+
+.btn > span {
+  display: block;
+  position: relative;
+  width: 2em;
+  height: 2em;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+  margin: 1em auto;
+}
+
+.btn > span > span {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+  border: 1px solid transparent;
+}
+
+/* plus button */
+.btn.plus > span > span {
+  transform: scale(0.3,1) translate(-6%, 0%);
+}
+
+.btn.plus > span > span.s3 {
+  transform: rotate(90deg) scale(0.3,1);
+}
+
+.btn.checked > span > span {
+   width: 1em;
+   height: 0.4em;
+   transform-origin: 100% 100%;
+   transform: translate(-0.3em,1.4em) rotate(45deg); }
+
+.btn.checked > span > span.s3 {
+  width: 1.65em;
+  transform-origin: 0 100%;
+  transform: translate(0.8em,1.4em) rotate(-45deg); }

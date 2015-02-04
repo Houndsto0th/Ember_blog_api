@@ -1,0 +1,27 @@
+<div class= "paper-sidebar">
+  {{#link-to 'posts.new' }}
+  <div class="buttonContain">
+    <a href="#" class= "btn plus" >
+      <span>
+        <span class="s1"></span>
+        <span class="s2"></span>
+        <span class="s3"></span>
+      </span>
+    </a>
+  </div>
+  {{/link-to}}
+{{#each post in model}}
+  <h2>
+    {{#link-to 'post.edit' post.id}}
+    {{post.title}}
+    {{/link-to}}
+    </h2>
+  <p>
+    {{post.body}}
+    </p>
+{{/each}}
+</div>
+
+<div class="paper-main">
+{{outlet}}
+</div>
